@@ -1,4 +1,5 @@
 # Object
+
 Very straight-forward OOP Library for Lua focused on simplicity and speed.
 
 ## Overview
@@ -31,10 +32,10 @@ local square1 = object.create(Square, 16)
 
 ## Usage
 ### object.prototype([super,] defn)
-Function used to create a new _prototype_, it returns a table containing all the variables defined in the ´defn´ function. 
-It supports two parameters, a super _prototype_ and a defining function, the `super` parameter is optional, the ´defn´ function is not.
+Function used to create a new _prototype_, it returns a table containing all the variables defined in the `defn` function. 
+It supports two parameters, a super _prototype_ and a defining function, the `super` parameter is optional, the `defn` function is not.
 
-When defining a new prototype all variable declarations made inside the ´defn´ function are not treated as global variables but rather as variables belonging to the future prototype table. Local variables will belong exclusively to the prototype table and will not be passed on to future objects, although they can still reference them (in a way local variables can be seen as static variables).
+When defining a new prototype all variable declarations made inside the `defn` function are not treated as global variables but rather as variables belonging to the future prototype table. Local variables will belong exclusively to the prototype table and will not be passed on to future objects, although they can still reference them (in a way local variables can be seen as static variables).
 
 There are three special keywords to use inside the defn function: **`self`, `super` and `constructor`**. 
 
